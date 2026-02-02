@@ -4,7 +4,7 @@ const connectDB = require("./dbConfig/db");
 const router = require("./routes/AllRoutes");
 dotenv.config();
 const app = express();
-app.use(express.json())
+app.use(express.json());
 
 app.use("/api",router)
 app.get("/",(req,res)=>{
